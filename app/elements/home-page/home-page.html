@@ -40,28 +40,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       },
       _placeChanged: function() {
+        /* jshint ignore:start */
+        // jscs:disable
         this.vehicles = [
-          { "_id" : "56ada42b570a961830e93de9", "price" : 18995, "name" : " 2010 Audi Q5 3.2L V6 AWD with Heated Leather Seats!", "year" : "2010", "make" : "Audi", "kilometers" : 162620, "model" : "Q5" }
-          ,{ "_id" : "56ada42c570a961830e93dea", "price" : 15995, "name" : " 2008 GMC Sierra 1500 SLE 4X4 4.8L V8 Crew Cab with Remote Start!", "year" : "2008", "make" : "GMC", "kilometers" : 154371, "model" : "Sierra 1500" }
-          ,{ "_id" : "56ada42c570a961830e93deb", "price" : 16988, "name" : " 2010 GMC Acadia SLE2 with Remote Start and 3rd Row Seating!", "year" : "2010", "make" : "GMC", "kilometers" : 141445, "model" : "Acadia" }
-          ,{ "_id" : "56ada42c570a961830e93dec", "price" : 16988, "name" : " 2013 Ford Escape SE with Remote Start, Heated Seats and Powertrain", "year" : "2013", "make" : "Ford", "kilometers" : 94790, "model" : "Escape" }
-          ,{ "_id" : "56ada42c570a961830e93ded", "price" : 21900, "name" : " 2007 Dodge Ram 3500 SLT 4x4 Crew Cab 5.9L Cummings Diesel!", "year" : "2007", "make" : "Dodge", "kilometers" : 244554, "model" : "Ram 3500" }
-          ,{ "_id" : "56ada42c570a961830e93dee", "price" : 13688, "name" : " 2010 Dodge Journey R/T - AWD with Remote Start & Heated Leather Seats!!", "year" : "2010", "make" : "Dodge", "kilometers" : 81378, "model" : "Journey" }
-          ,{ "_id" : "56ada42c570a961830e93def", "price" : 20988, "name" : " 2014 Dodge Grand Caravan Town & Country Touring 7 Passenger Seating with St", "year" : "2014", "make" : "Dodge", "kilometers" : 65963, "model" : "Grand Caravan" }
-          ,{ "_id" : "56ada42c570a961830e93df0", "price" : 11388, "name" : " 2012 Ford Fiesta SES - Remote Start, Heated Seats & LOW Kms!!", "year" : "2012", "make" : "Ford", "kilometers" : 36824, "model" : "Fiesta" }
-          ,{ "_id" : "56ada42d570a961830e93df1", "price" : 20988, "name" : " 2014 Chrysler Town & Country Touring 7 Passenger Seating with Stow N Go!", "year" : "2014", "make" : "Chrysler", "kilometers" : 65963, "model" : "Town & Country" }
-          ,{ "_id" : "56ada42d570a961830e93df2", "price" : 6488, "name" : " 2009 Chevrolet Cobalt LS - Fuel Efficent with New Tires and Battery!", "year" : "2009", "make" : "Chevrolet", "kilometers" : 97443, "model" : "Cobalt" }
-          ,{ "_id" : "56ada42d570a961830e93df3", "price" : 11688, "name" : " 2013 Chevrolet Cruze LS - ACCIDENT FREE!! ONE OWNER!! ", "year" : "2013", "make" : "Chevrolet", "kilometers" : 83377, "model" : "Cruze" }
-          ,{ "_id" : "56ada42d570a961830e93df4", "price" : 15988, "name" : " 2009 Dodge Challenger SXT 3.5L V6 Automatic", "year" : "2009", "make" : "Dodge", "kilometers" : 104744, "model" : "Challenger" }
-          ,{ "_id" : "56ada42d570a961830e93df5", "price" : 21500, "name" : " 2010 Chevrolet Silverado 1500 LT Z71 4x4 Regular Cab with Remote Start!", "year" : "2010", "make" : "Chevrolet", "kilometers" : 84454, "model" : "Silverado 1500" }
-          ,{ "_id" : "56ada42d570a961830e93df6", "price" : 6995, "name" : " 2007 Chevrolet Impala LS - Great Options & Value!", "year" : "2007", "make" : "Chevrolet", "kilometers" : 166124, "model" : "Impala" }
-          ,{ "_id" : "56ada42d570a961830e93df7", "price" : 27988, "name" : " 2009 Audi S5 4.2L (M6) All Year Round Sports Car!", "year" : "2009", "make" : "Audi", "kilometers" : 116213, "model" : "S5" }
-          ,{ "_id" : "56ada42d570a961830e93df8", "price" : 4995, "name" : " 2007 Chevrolet Cobalt LT Affordable and Reliable!", "year" : "2007", "make" : "Chevrolet", "kilometers" : 102642, "model" : "Cobalt" }
-          ,{ "_id" : "56ada42d570a961830e93df9", "price" : 9988, "name" : " 2009 Suzuki SX4 JLX 4X4 with Remote Start and Heated Seats!", "year" : "2009", "make" : "Suzuki", "kilometers" : 98909, "model" : "SX4" }
-          ,{ "_id" : "56ada42d570a961830e93dfa", "price" : 21900, "name" : " 2007 Ram 3500 SLT 4x4 Crew Cab 5.9L Cummings Diesel!", "year" : "2007", "make" : "Ram", "kilometers" : 244554, "model" : "3500" }
-          ,{ "_id" : "56ada42d570a961830e93dfb", "price" : 22900, "name" : " 2012 Ram 1500 SLT  4X4 Quad Cab 5.7L V8 Hemi", "year" : "2012", "make" : "Ram", "kilometers" : 88976, "model" : "1500" }
-          ,{ "_id" : "56ada42d570a961830e93dfc", "price" : 9688, "name" : " 2009 Mazda Mazda3 GT with Remote Start and Heated Seats!", "year" : "2009", "make" : "Mazda", "kilometers" : 82611, "model" : "Mazda3" }
-        ]
+          {'_id' : '56ada42b570a961830e93de9', 'price' : 18995, 'name' : ' 2010 Audi Q5 3.2L V6 AWD with Heated Leather Seats!', 'year' : '2010', 'make' : 'Audi', 'kilometers' : 162620, 'model' : 'Q5' }
+          ,{ '_id' : '56ada42c570a961830e93dea', 'price' : 15995, 'name' : ' 2008 GMC Sierra 1500 SLE 4X4 4.8L V8 Crew Cab with Remote Start!', 'year' : '2008', 'make' : 'GMC', 'kilometers' : 154371, 'model' : 'Sierra 1500' }
+          ,{ '_id' : '56ada42c570a961830e93deb', 'price' : 16988, 'name' : ' 2010 GMC Acadia SLE2 with Remote Start and 3rd Row Seating!', 'year' : '2010', 'make' : 'GMC', 'kilometers' : 141445, 'model' : 'Acadia' }
+          ,{ '_id' : '56ada42c570a961830e93dec', 'price' : 16988, 'name' : ' 2013 Ford Escape SE with Remote Start, Heated Seats and Powertrain', 'year' : '2013', 'make' : 'Ford', 'kilometers' : 94790, 'model' : 'Escape' }
+          ,{ '_id' : '56ada42c570a961830e93ded', 'price' : 21900, 'name' : ' 2007 Dodge Ram 3500 SLT 4x4 Crew Cab 5.9L Cummings Diesel!', 'year' : '2007', 'make' : 'Dodge', 'kilometers' : 244554, 'model' : 'Ram 3500' }
+          ,{'_id' : '56ada42c570a961830e93dee', 'price' : 13688, 'name' : ' 2010 Dodge Journey R/T - AWD with Remote Start & Heated Leather Seats!!', 'year' : '2010', 'make' : 'Dodge', 'kilometers' : 81378, 'model' : 'Journey' }
+          ,{ '_id' : '56ada42c570a961830e93def', 'price' : 20988, 'name' : ' 2014 Dodge Grand Caravan Town & Country Touring 7 Passenger Seating with St', 'year' : '2014', 'make' : 'Dodge', 'kilometers' : 65963, 'model' : 'Grand Caravan' }
+          ,{ '_id' : '56ada42c570a961830e93df0', 'price' : 11388, 'name' : ' 2012 Ford Fiesta SES - Remote Start, Heated Seats & LOW Kms!!', 'year' : '2012', 'make' : 'Ford', 'kilometers' : 36824, 'model' : 'Fiesta' }
+          ,{ '_id' : '56ada42d570a961830e93df1', 'price' : 20988, 'name' : ' 2014 Chrysler Town & Country Touring 7 Passenger Seating with Stow N Go!', 'year' : '2014', 'make' : 'Chrysler', 'kilometers' : 65963, 'model' : 'Town & Country' }
+          ,{ '_id' : '56ada42d570a961830e93df2', 'price' : 6488, 'name' : ' 2009 Chevrolet Cobalt LS - Fuel Efficent with New Tires and Battery!', 'year' : '2009', 'make' : 'Chevrolet', 'kilometers' : 97443, 'model' : 'Cobalt' }
+          ,{ '_id' : '56ada42d570a961830e93df3', 'price' : 11688, 'name' : ' 2013 Chevrolet Cruze LS - ACCIDENT FREE!! ONE OWNER!! ', 'year' : '2013', 'make' : 'Chevrolet', 'kilometers' : 83377, 'model' : 'Cruze' }
+          ,{ '_id' : '56ada42d570a961830e93df4', 'price' : 15988, 'name' : ' 2009 Dodge Challenger SXT 3.5L V6 Automatic', 'year' : '2009', 'make' : 'Dodge', 'kilometers' : 104744, 'model' : 'Challenger' }
+          ,{ '_id' : '56ada42d570a961830e93df5', 'price' : 21500, 'name' : ' 2010 Chevrolet Silverado 1500 LT Z71 4x4 Regular Cab with Remote Start!', 'year' : '2010', 'make' : 'Chevrolet', 'kilometers' : 84454, 'model' : 'Silverado 1500' }
+          ,{ '_id' : '56ada42d570a961830e93df6', 'price' : 6995, 'name' : ' 2007 Chevrolet Impala LS - Great Options & Value!', 'year' : '2007', 'make' : 'Chevrolet', 'kilometers' : 166124, 'model' : 'Impala' }
+          ,{ '_id' : '56ada42d570a961830e93df7', 'price' : 27988, 'name' : ' 2009 Audi S5 4.2L (M6) All Year Round Sports Car!', 'year' : '2009', 'make' : 'Audi', 'kilometers' : 116213, 'model' : 'S5' }
+          ,{ '_id' : '56ada42d570a961830e93df8', 'price' : 4995, 'name' : ' 2007 Chevrolet Cobalt LT Affordable and Reliable!', 'year' : '2007', 'make' : 'Chevrolet', 'kilometers' : 102642, 'model' : 'Cobalt' }
+          ,{ '_id' : '56ada42d570a961830e93df9', 'price' : 9988, 'name' : ' 2009 Suzuki SX4 JLX 4X4 with Remote Start and Heated Seats!', 'year' : '2009', 'make' : 'Suzuki', 'kilometers' : 98909, 'model' : 'SX4' }
+          ,{ '_id' : '56ada42d570a961830e93dfa', 'price' : 21900, 'name' : ' 2007 Ram 3500 SLT 4x4 Crew Cab 5.9L Cummings Diesel!', 'year' : '2007', 'make' : 'Ram', 'kilometers' : 244554, 'model' : '3500' }
+          ,{ '_id' : '56ada42d570a961830e93dfb', 'price' : 22900, 'name' : ' 2012 Ram 1500 SLT  4X4 Quad Cab 5.7L V8 Hemi', 'year' : '2012', 'make' : 'Ram', 'kilometers' : 88976, 'model' : '1500' }
+          ,{ '_id' : '56ada42d570a961830e93dfc', 'price' : 9688, 'name' : ' 2009 Mazda Mazda3 GT with Remote Start and Heated Seats!', 'year' : '2009', 'make' : 'Mazda', 'kilometers' : 82611, 'model' : 'Mazda3' }
+        ];
+        /* jshint ignore:end */
+        // jscs:enable
       }
     });
   })();
